@@ -10,6 +10,8 @@ const server = http.createServer((req, res) => {
 Ambiente: ${ambiente}
 
 Senha: ${senha}
+
+Pipeline: Working
 `);
 });
 
