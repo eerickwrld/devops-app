@@ -1,10 +1,18 @@
 const http = require('http');
 
+const porta = 3000;
+
+const ambiente = process.env.AMBIENTE || "local";
+const senha = process.env.SENHA || "sem senha";
+
 const server = http.createServer((req, res) => {
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Aplicação atualizada via kubernetes rolling update!');
+    res.end(`
+Ambiente: ${ambiente}
+
+Senha: ${senha}
+`);
 });
 
-server.listen(3000, () => {
-    console.log('Servidor rodando na porta 3000');
+server.listen(porta, () => {
+    console.log(`Servidor rodando na porta ${porta}`);
 });
