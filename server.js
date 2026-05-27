@@ -11,7 +11,7 @@ Ambiente: ${ambiente}
 
 Senha: ${senha}
 
-Pipeline: Working
+Pipeline: Working /2
 `);
 });
 
