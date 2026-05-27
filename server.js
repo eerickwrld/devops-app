@@ -13,8 +13,10 @@ Senha: ${senha}
 
 Pipeline: Working /2
 
+
 anão desgraçado
 `);
+console.log("esse anão merece morrer");
 });
 
 server.listen(porta, () => {
