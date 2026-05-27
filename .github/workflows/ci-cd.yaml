@@ -24,11 +24,6 @@ jobs:
 
     - name: Push imagem
       run: docker push erickwrld/devops-app:latest
-      
-    - name: Configurar kubeconfig
-      run: |
-        mkdir -p ~/.kube
-        echo "${{ secrets.KUBE_CONFIG }}" > ~/.kube/config
 
     - name: Atualizar deployment
       run: |
