@@ -20,7 +20,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build imagem Docker
-      run: docker build -t SEU_USUARIO/devops-app:latest .
+      run: docker build -t erickwrld/devops-app:latest .
 
     - name: Push imagem Docker
       run: docker push erickwrld/devops-app:latest
